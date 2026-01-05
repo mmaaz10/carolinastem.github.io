@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="assets/favicon-final.png" type="image/png" /> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join CarolinaSTEM as a volunteer tutor and help North Carolina students succeed in STEM. Applications opening soon - join our interest list today.">
+  <title>Get Involved</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="top-nav">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/favicon-final.png" alt="CarolinaSTEM Logo" class="logo-img">
+      <span class="logo-text">CarolinaSTEM</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tutoring.html">Tutoring</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<header class="hero about-hero">
+  <div class="container">
+    <h1>Get Involved</h1>
+    <p class="subtitle">
+      Join our mission to make STEM education accessible to all North Carolina students
+    </p>
+  </div>
+</header>
+
+<!-- VOLUNTEER CONTENT -->
+<section class="section light-bg">
+  <div class="container flex-row">
+    
+    <!-- LEFT: TEXT -->
+    <div class="text">
+      <h2>Volunteer with Us</h2>
+
+      <p>
+        We're currently not accepting new volunteer applications as we're working to expand our program infrastructure and training resources. However, we'll be opening applications soon
+for passionate individuals who want to make a difference in students' lives.
+      </p>
+
+      <p>
+        When we reopen, we'll be looking for high school and college students with strong
+        backgrounds in STEM fields who are committed to helping middle and high school students succeed.
+      </p>
+
+      <a
+        href="https://forms.gle/A83GnDhWEtL3auiw7"
+        target="_blank"
+        class="button volunteer-btn"
+      >
+        Join the Interest List
+      </a>
+    </div>
+
+    <!-- RIGHT: IMAGE -->
+    <div class="image">
+      <img src="assets/volunteer.png" alt="Volunteer Image">
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>Contact us at <a href="mailto:carolinastemnc@gmail.com">carolinastemnc@gmail.com</a></p>
+    <p>© 2025 CarolinaSTEM. All rights reserved. | <a href="privacy.html" style="color: #38bdf8;">Privacy Policy</a></p>
+  </div>
+</footer>
+<script>
+  // Get the current page's filename
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Get all nav links
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  navLinks.forEach(link => {
+    // If the href matches the current page, add the 'active' class
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
