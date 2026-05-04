@@ -49,11 +49,4 @@ window.addEventListener('load', function() {
 // X Button for paused heading
 function closeAnnouncement() {
   document.getElementById("announcement").style.display = "none";
-  localStorage.setItem("announcementClosed", "true");
 }
-
-window.onload = function () {
-  if (localStorage.getItem("announcementClosed") === "true") {
-    document.getElementById("announcement").style.display = "none";
-  }
-};
