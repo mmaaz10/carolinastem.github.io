@@ -45,3 +45,8 @@ window.addEventListener('load', function() {
     }, 500);
   }
 });
+
+// X Button for paused heading
+function closeAnnouncement() {
+  document.getElementById("announcement").style.display = "none";
+}
