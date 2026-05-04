@@ -548,3 +548,13 @@ body {
   top: 64px; /* adjust if your navbar height is different */
   z-index: 99;
 }
+
+.announcement-link {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.announcement-link:hover {
+  opacity: 0.8;
+}
